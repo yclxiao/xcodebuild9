@@ -75,4 +75,4 @@ https://www.5288z.com/2106.html
 	
 ## 6. 错误信息
 1. 如果xcodebuild -workspace 指定了描述文件、证书等，会出现如下错误。xcodebuild -project不存在这个错误
-<img src="./images/1.png" />
+<img src="./images/2.png" />
