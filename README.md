@@ -45,7 +45,7 @@ xcodebuild -exportArchive -archivePath /Users/yclxiao/Downloads/arena.xcarchive 
         <string>arenaprod</string>//描述文件名称
     </dict>
     <key>signingCertificate</key>
-    <string>699B8B4BEB45F428D55CC7623617B5798596CA5B</string>
+    <string>699B8B4BEB45F428D55CC7623617B5798596CA5B</string>//证书的SHA-1，可在钥匙串中的证书详情查看
     <key>signingStyle</key>
     <string>manual</string>
     <key>stripSwiftSymbols</key>
@@ -77,6 +77,8 @@ https://www.5288z.com/2106.html
 2. 真正指定开发证书和描述文件的是在第二步，把archive变成ipa时，需要配置plist文件，在plist文件中指定描述证书、appid、证书等信息
 3. 根据archive生成ipa包时，如果采用的是开发环境证书打包的ipa只有20多兆，如果是证书的证书居然有100多兆？
 	* 这个不算是问题，因为打开发环境包的时候，里面选的机型才几个，但是打包正式包的时候，是要适配所有机型。上架appstore时，appstore会自动处理这个大小，每个机型看到appstore里的大小实际没这么大
+	* 用xcode导出ipa时，配置文件如下，所以用命令行打包时，应该用如下命令，这样打出的包才70M，体积明显减小：
+	<img src="./images/3.png" />
 	
 	
 ## 6. 错误信息
