@@ -34,19 +34,25 @@ xcodebuild -exportArchive -archivePath /Users/yclxiao/Downloads/arena.xcarchive 
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">;
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>teamID</key>
-    <string>74PFUL8KG7</string>
+    <key>method</key>
+    <string>app-store</string>//development/app-store/企业分发等
     <key>provisioningProfiles</key>
     <dict>
         <key>com.bm001.mobile.arena</key>
-        <string>arenadev</string>//描述文件名称
+        <string>arenaprod</string>//描述文件名称
     </dict>
-    <key>method</key>
-    <string>development</string>//development/app-store/企业分发等
-    <key>compileBitcode</key>
+    <key>signingCertificate</key>
+    <string>699B8B4BEB45F428D55CC7623617B5798596CA5B</string>
+    <key>signingStyle</key>
+    <string>manual</string>
+    <key>stripSwiftSymbols</key>
+    <false/>
+    <key>teamID</key>
+    <string>74PFUL8KG7</string>
+    <key>uploadBitcode</key>
     <false/>
     <key>uploadSymbols</key>
     <false/>
