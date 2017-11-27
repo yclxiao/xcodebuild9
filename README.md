@@ -73,5 +73,6 @@ https://www.5288z.com/2106.html
 	* 这个不算是问题，因为打开发环境包的时候，里面选的机型才几个，但是打包正式包的时候，是要适配所有机型。上架appstore时，appstore会自动处理这个大小，每个机型看到appstore里的大小实际没这么大
 	
 	
-## 6. 自己本地的证书信息
+## 6. 错误信息
+1. 如果xcodebuild -workspace 指定了描述文件、证书等，会出现如下错误。xcodebuild -project不存在这个错误
 <img src="./images/1.png" />
